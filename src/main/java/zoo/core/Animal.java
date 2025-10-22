@@ -36,6 +36,7 @@ public abstract class Animal {
     // Abstract Methods
     public abstract void makeSound();
     public abstract String getSpecies();
+    public abstract void feed();
 
     // Concrete Methods
     @Override
@@ -47,7 +48,7 @@ public abstract class Animal {
     }
 
     public void info() {
-        System.out.println("#" + id + " - " + getSpecies() + " - " + name + " (" + age + " yaşında)");
+        System.out.println("#" + id + " - " + getSpecies() + " - " + name + " (" + age + " years old)");
     }
 
     // Util Methods
